@@ -134,7 +134,7 @@ kubectl apply -f deployment.yaml
 If you want to delete it;
 
 ```
-kubectl apply -f deployment.yaml
+kubectl delete -f deployment.yaml
 ```
 
 When you deploy it, you can easily connect it via terminal. Here is an example via **OpenShift** environment;

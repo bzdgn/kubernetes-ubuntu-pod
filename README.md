@@ -20,6 +20,7 @@ First we need to build an image based on Ubuntu. We are going to use the base im
 - ping
 - nmap
 - kubectl
+- opentelemetry jar (under workbench)
 
 So that if we need these tools, we can just connect to the Pod terminal and run them. That's the idea of a debug pod.
 

@@ -137,7 +137,7 @@ kubectl apply -f deployment.yaml
 
 When you deploy it, you can easily connect it via terminal. Here is an example via **OpenShift** environment;
 
-![openshift-terminal](https://github.com/bzdgn/kubernetes-ubuntu-pod/blob/master/openshift_terminal.png)
+![openshift-terminal](https://github.com/bzdgn/kubernetes-ubuntu-pod/blob/main/openshift_terminal.png)
 
 
 [Go back to TOC](#toc)

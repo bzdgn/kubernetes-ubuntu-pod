@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bzdgn-debug-pod
+  labels:
+    egress-frontoffice-policy: allow
+    my-label: my-label-value
+spec:
+  imagePullSecrets:
+    - name: harbor-puller                                           # This will be your image pull secret
+  containers:
+    - name: bzdgn-debug-pod-container
+      image: <your_image_repository_here>/bzdgn/debug-pod:latest    # This will be your image reference
+      command: ["/bin/sleep", "3650d"]                              # We keep the Pod alive for 3650 days
+      imagePullPolicy: Always
+      resources:
+        limits:
+          cpu: 500m
+          memory: 5Gi
+        requests:
+          cpu: 100m
+          memory: 1Gi
+---
